@@ -1,0 +1,638 @@
+/* Style général */
+body {
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+    background-color: #FAF4EC;
+    color: #3A2321;
+}
+
+/* Header */
+header {
+    background-color: #FAF4EC;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #C8A96A;
+}
+
+header h1 {
+    color: #2E1614;
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3A2321;
+    margin: 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #8F6F34;
+}
+
+/* Accueil */
+.accueil {
+    background-color: #2E1614;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.presentation h2 {
+    color: #C8A96A;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.presentation h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.presentation p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Bouton */
+.bouton {
+    display: inline-block;
+    background-color: #C8A96A;
+    color: #2E1614;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.bouton:hover {
+    background-color: #DEC594;
+}
+
+/* Qui sommes-nous */
+.apropos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.description {
+    max-width: 600px;
+    margin: auto;
+}
+
+.description h2 {
+    color: #8F6F34;
+    font-size: 32px;
+}
+
+.description p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #2E1614;
+    color: #C8A96A;
+    text-align: center;
+    padding: 25px;
+}
+
+footer h2 {
+    font-size: 28px;
+}
+
+/* Téléphone */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .presentation h2 {
+        font-size: 42px;
+    }
+
+    .presentation h3 {
+        font-size: 20px;
+    }
+
+    .accueil {
+        padding: 50px 20px;
+    }
+}
+
+
+/* ===== Lien actif du menu ===== */
+nav a.active {
+    color: #8F6F34;
+    font-weight: bold;
+    border-bottom: 3px solid #C8A96A;
+    padding-bottom: 4px;
+}
+
+/* ===== Page Réservation ===== */
+.reservation {
+    background-color: #2E1614;
+    text-align: center;
+    padding: 60px 20px 90px;
+}
+
+.reservation h2 {
+    color: #C8A96A;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.reservation h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.formulaire {
+    background-color: #FAF4EC;
+    border: 3px solid #C8A96A;
+    border-radius: 10px;
+    max-width: 480px;
+    margin: auto;
+    padding: 35px 40px;
+    text-align: left;
+}
+
+.champ {
+    margin-bottom: 18px;
+}
+
+.champ label {
+    display: block;
+    font-weight: bold;
+    color: #2E1614;
+    margin-bottom: 8px;
+}
+
+.champ input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #3A2321;
+    background-color: white;
+    border: 2px solid #C8A96A;
+    border-radius: 6px;
+    outline: none;
+}
+
+.champ input:focus {
+    border-color: #8F6F34;
+}
+
+.champ input.invalide {
+    border-color: #B3261E;
+}
+
+.champ input.valide {
+    border-color: #4E8A3E;
+}
+
+.erreur {
+    display: block;
+    min-height: 18px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #B3261E;
+}
+
+.bouton-reserver {
+    display: block;
+    margin: 10px auto 0;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 40px;
+}
+
+.bouton-reserver:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+/* Message de confirmation (simulation) */
+.confirmation {
+    background-color: #FAF4EC;
+    border: 3px solid #C8A96A;
+    border-radius: 10px;
+    max-width: 480px;
+    margin: auto;
+    padding: 35px 40px;
+    color: #3A2321;
+    line-height: 1.8;
+}
+
+.confirmation h4 {
+    color: #8F6F34;
+    font-size: 26px;
+    margin: 0 0 10px;
+}
+
+.confirmation .recap {
+    text-align: left;
+    background: white;
+    border: 2px solid #C8A96A;
+    border-radius: 6px;
+    padding: 12px 18px;
+    margin: 15px 0 20px;
+}
+
+.confirmation .recap p {
+    margin: 4px 0;
+}
+
+.confirmation button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .reservation h2 {
+        font-size: 42px;
+    }
+
+    .reservation h3 {
+        font-size: 20px;
+    }
+
+    .formulaire,
+    .confirmation {
+        padding: 25px 20px;
+    }
+}
+
+/* Message de confirmation affiché sous le bouton, dans le formulaire */
+.formulaire .confirmation {
+    max-width: none;
+    margin: 25px 0 0;
+    padding: 15px 20px;
+    background-color: white;
+    border-width: 2px;
+    text-align: center;
+}
+
+/* =====================================================
+   POLICE DES TITRES
+   ===================================================== */
+header h1,
+footer h2,
+.presentation h2,
+.description h2,
+.reservation h2,
+.titre-page h2,
+.titre-section {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* =====================================================
+   PAGES MENU / GALERIE / CONTACT
+   ===================================================== */
+
+/* Bandeau du titre */
+.titre-page {
+    background-color: #2E1614;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.titre-page h2 {
+    color: #C8A96A;
+    font-size: 60px;
+    margin: 0;
+}
+
+/* Zone de contenu centrée */
+.contenu {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* ----- Photos : cadre vide (div) ou vraie image (img) ----- */
+.photo {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+div.photo {
+    background-color: #EADFC8;
+    border: 3px dashed #C8A96A;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div.photo b {
+    color: #C8A96A;
+    font-size: 20px;
+}
+
+div.photo span {
+    margin-top: 6px;
+}
+
+/* ----- Menu : recherche et filtres ----- */
+.recherche {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+    padding: 14px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #3A2321;
+    background-color: white;
+    border: 2px solid #C8A96A;
+    border-radius: 6px;
+}
+
+.filtres {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filtre {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2E1614;
+    background-color: transparent;
+    border: 2px solid #C8A96A;
+    border-radius: 6px;
+    padding: 12px 24px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.filtre.actif {
+    background-color: #C8A96A;
+}
+
+/* ----- Menu : cartes des plats ----- */
+.grille-plats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.grille-plats.trois {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.plat {
+    background-color: white;
+    border: 2px solid #C8A96A;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.plat .photo {
+    height: 220px;
+    border-radius: 0;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 18px;
+    font-weight: bold;
+}
+
+.prix {
+    color: #C8A96A;
+}
+
+.aucun {
+    display: none;
+    text-align: center;
+    color: #8F6F34;
+    font-size: 18px;
+}
+
+/* ----- Menu : offres spéciales ----- */
+.offres {
+    background-color: #2E1614;
+}
+
+.titre-section {
+    color: #C8A96A;
+    font-size: 40px;
+    margin: 0 0 30px;
+}
+
+.grille-offres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding-bottom: 20px;
+}
+
+.offre {
+    border: 2px solid #C8A96A;
+    border-radius: 8px;
+    padding: 30px;
+    color: white;
+}
+
+.offre h4 {
+    color: #C8A96A;
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.offre p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* ----- Galerie ----- */
+.grille-galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grille-galerie .photo {
+    height: 380px;
+}
+
+/* ----- Contact ----- */
+.grille-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.boite {
+    background-color: white;
+    border: 2px solid #C8A96A;
+    border-radius: 8px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+}
+
+.boite h3 {
+    color: #C8A96A;
+    font-size: 24px;
+    margin: 0 0 12px;
+}
+
+.boite p {
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+.grille-contact .photo {
+    min-height: 350px;
+    height: 100%;
+}
+
+/* ----- Téléphone ----- */
+@media (max-width: 1000px) {
+    .grille-plats,
+    .grille-plats.trois,
+    .grille-galerie {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .titre-page h2 {
+        font-size: 42px;
+    }
+
+    .grille-offres,
+    .grille-contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .grille-plats,
+    .grille-plats.trois,
+    .grille-galerie {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE : tablette et téléphone
+   ===================================================== */
+img {
+    max-width: 100%;
+}
+
+/* Tablette */
+@media (max-width: 1000px) {
+    .contenu {
+        padding: 40px 20px;
+    }
+
+    .titre-page h2 {
+        font-size: 50px;
+    }
+
+    .grille-galerie .photo {
+        height: 300px;
+    }
+}
+
+/* Petite tablette et téléphone */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        margin: 0 0 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titre-page {
+        padding: 40px 15px;
+    }
+
+    .titre-section {
+        font-size: 34px;
+    }
+
+    .description h2 {
+        font-size: 28px;
+    }
+}
+
+/* Téléphone */
+@media (max-width: 560px) {
+    .titre-page h2,
+    .presentation h2,
+    .reservation h2 {
+        font-size: 36px;
+    }
+
+    .contenu {
+        padding: 30px 15px;
+    }
+
+    .grille-galerie .photo {
+        height: 240px;
+    }
+
+    .plat .photo {
+        height: 200px;
+    }
+
+    .offre {
+        padding: 20px;
+    }
+
+    .boite {
+        padding: 20px;
+    }
+
+    .filtre {
+        padding: 10px 16px;
+        font-size: 15px;
+    }
+
+    footer p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
