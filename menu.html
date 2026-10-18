@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Le Délice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Le Délice</h1>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="Reservation.html">Réservation</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="titre-page">
+        <h2>Notre Menu</h2>
+    </section>
+
+    <section class="contenu">
+        <input type="text" id="recherche" class="recherche" placeholder="Rechercher un plat...">
+
+        <div class="filtres">
+            <button class="filtre actif" data-categorie="tous">Tous</button>
+            <button class="filtre" data-categorie="entrees">Entrées</button>
+            <button class="filtre" data-categorie="plats">Plats</button>
+            <button class="filtre" data-categorie="desserts">Desserts</button>
+        </div>
+
+        <div class="grille-plats" id="grille-menu">
+            <div class="plat" data-categorie="plats">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo3.jpg" alt="Tajine d'agneau"> -->
+                <img class="photo" src="tagine.jpg">
+                <div class="infos">
+                    <span class="nom">Tajine d'agneau</span>
+                    <span class="prix">120 DH</span>
+                </div>
+            </div>
+
+            <div class="plat" data-categorie="plats">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo4.jpg" alt="Couscous royal"> -->
+                <img class="photo" src="coscous.jpg">
+                <div class="infos">
+                    <span class="nom">Couscous royal</span>
+                    <span class="prix">110 DH</span>
+                </div>
+            </div>
+
+            <div class="plat" data-categorie="plats">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo5.jpg" alt="Pastilla au poulet"> -->
+                <img class="photo" src="pastilla poulet.jpg">
+                <div class="infos">
+                    <span class="nom">Pastilla au poulet</span>
+                    <span class="prix">95 DH</span>
+                </div>
+            </div>
+
+            <div class="plat" data-categorie="entrees">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo6.jpg" alt="Harira"> -->
+                <img class="photo" src="harira.jpg">
+                <div class="infos">
+                    <span class="nom">Harira</span>
+                    <span class="prix">40 DH</span>
+                </div>
+            </div>
+
+            <div class="plat" data-categorie="entrees">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo7.jpg" alt="Briouates"> -->
+                <img class="photo" src="briwat.jpg">
+                <div class="infos">
+                    <span class="nom">Briouates</span>
+                    <span class="prix">60 DH</span>
+                </div>
+            </div>
+
+            <div class="plat" data-categorie="entrees">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo8.jpg" alt="Salade marocaine"> -->
+                <img class="photo" src="salade.jpg">
+                <div class="infos">
+                    <span class="nom">Salade marocaine</span>
+                    <span class="prix">45 DH</span>
+                </div>
+            </div>
+
+            <div class="plat" data-categorie="desserts">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo9.jpg" alt="Chebakia"> -->
+                <img class="photo" src="chebakiya.jpg">
+                <div class="infos">
+                    <span class="nom">Chebakia</span>
+                    <span class="prix">30 DH</span>
+                </div>
+            </div>
+
+            <div class="plat" data-categorie="desserts">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo10.jpg" alt="Baghrir"> -->
+                <img class="photo" src="bagherir.jpg">
+                <div class="infos">
+                    <span class="nom">Baghrir</span>
+                    <span class="prix">35 DH</span>
+                </div>
+            </div>
+        </div>
+
+        <p class="aucun" id="aucun">Aucun plat trouvé.</p>
+    </section>
+
+    <section class="offres">
+        <div class="contenu">
+            <h3 class="titre-section">Nos offres spéciales</h3>
+
+            <div class="grille-offres">
+                <div class="offre">
+                    <h4>Menu du jour</h4>
+                    <p>Harira + Tajine + Dessert : 130 DH</p>
+                </div>
+                <div class="offre">
+                    <h4>Menu famille</h4>
+                    <p>Couscous pour 4 personnes : 380 DH</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenu">
+        <h3 class="titre-section">Plats populaires</h3>
+
+        <div class="grille-plats trois">
+            <div class="plat">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo3.jpg" alt="Tajine d'agneau"> -->
+                <img class="photo" src="tagine.jpg">
+                <div class="infos">
+                    <span class="nom">Tajine d'agneau</span>
+                    <span class="prix">120 DH</span>
+                </div>
+            </div>
+
+            <div class="plat">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo4.jpg" alt="Couscous royal"> -->
+                <img class="photo" src="coscous.jpg">
+                <div class="infos">
+                    <span class="nom">Couscous royal</span>
+                    <span class="prix">110 DH</span>
+                </div>
+            </div>
+
+            <div class="plat">
+                <!-- Pour mettre ta photo, remplace le div par : <img class="photo" src="images/photo5.jpg" alt="Pastilla au poulet"> -->
+                <img class="photo" src="pastilla poulet.jpg">
+                <div class="infos">
+                    <span class="nom">Pastilla au poulet</span>
+                    <span class="prix">95 DH</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Le Délice</h2>
+        <p>12 Rue ABCDE, Casablanca · +212 0 00 00 00 00 · © 2026 Le Délice</p>
+    </footer>
+    <script src="menu.js"></script>
+</body>
+</html>
