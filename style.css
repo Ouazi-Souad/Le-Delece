@@ -1,4 +1,4 @@
-/* Style général */
+
 body {
     margin: 0;
     font-family: 'Lato', Arial, sans-serif;
@@ -6,7 +6,7 @@ body {
     color: #3A2321;
 }
 
-/* Header */
+
 header {
     background-color: #FAF4EC;
     padding: 20px;
@@ -32,7 +32,6 @@ nav a:hover {
     color: #8F6F34;
 }
 
-/* Accueil */
 .accueil {
     background-color: #2E1614;
     color: white;
@@ -58,7 +57,7 @@ nav a:hover {
     margin: 20px auto;
 }
 
-/* Bouton */
+
 .bouton {
     display: inline-block;
     background-color: #C8A96A;
@@ -72,7 +71,7 @@ nav a:hover {
     background-color: #DEC594;
 }
 
-/* Qui sommes-nous */
+
 .apropos {
     text-align: center;
     padding: 50px 20px;
@@ -93,7 +92,7 @@ nav a:hover {
     line-height: 1.8;
 }
 
-/* Footer */
+
 footer {
     background-color: #2E1614;
     color: #C8A96A;
@@ -105,7 +104,7 @@ footer h2 {
     font-size: 28px;
 }
 
-/* Téléphone */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -134,7 +133,7 @@ footer h2 {
 }
 
 
-/* ===== Lien actif du menu ===== */
+/*  Lien actif du menu  */
 nav a.active {
     color: #8F6F34;
     font-weight: bold;
@@ -142,7 +141,7 @@ nav a.active {
     padding-bottom: 4px;
 }
 
-/* ===== Page Réservation ===== */
+/* Page Réservation  */
 .reservation {
     background-color: #2E1614;
     text-align: center;
@@ -232,7 +231,7 @@ nav a.active {
     cursor: wait;
 }
 
-/* Message de confirmation (simulation) */
+/* Message de confirmation  */
 .confirmation {
     background-color: #FAF4EC;
     border: 3px solid #C8A96A;
@@ -295,9 +294,7 @@ nav a.active {
     text-align: center;
 }
 
-/* =====================================================
-   POLICE DES TITRES
-   ===================================================== */
+/*  POLICE DES TITRES */
 header h1,
 footer h2,
 .presentation h2,
@@ -308,11 +305,9 @@ footer h2,
     font-family: 'Dancing Script', cursive;
 }
 
-/* =====================================================
-   PAGES MENU / GALERIE / CONTACT
-   ===================================================== */
+/*PAGES MENU / GALERIE / CONTACT*/
 
-/* Bandeau du titre */
+
 .titre-page {
     background-color: #2E1614;
     text-align: center;
@@ -325,14 +320,14 @@ footer h2,
     margin: 0;
 }
 
-/* Zone de contenu centrée */
+
 .contenu {
     max-width: 1200px;
     margin: auto;
     padding: 50px 20px;
 }
 
-/* ----- Photos : cadre vide (div) ou vraie image (img) ----- */
+/* Photos */
 .photo {
     display: block;
     width: 100%;
@@ -360,7 +355,7 @@ div.photo span {
     margin-top: 6px;
 }
 
-/* ----- Menu : recherche et filtres ----- */
+/* Menu : recherche et filtres*/
 .recherche {
     display: block;
     width: 100%;
@@ -398,7 +393,7 @@ div.photo span {
     background-color: #C8A96A;
 }
 
-/* ----- Menu : cartes des plats ----- */
+/*Menu : cartes des plats */
 .grille-plats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -439,7 +434,7 @@ div.photo span {
     font-size: 18px;
 }
 
-/* ----- Menu : offres spéciales ----- */
+/* Menu : offres spéciales*/
 .offres {
     background-color: #2E1614;
 }
@@ -475,7 +470,7 @@ div.photo span {
     font-size: 18px;
 }
 
-/* ----- Galerie ----- */
+/* Galerie */
 .grille-galerie {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -486,7 +481,7 @@ div.photo span {
     height: 380px;
 }
 
-/* ----- Contact ----- */
+/* Contact */
 .grille-contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -517,7 +512,7 @@ div.photo span {
     height: 100%;
 }
 
-/* ----- Téléphone ----- */
+/* Téléphone */
 @media (max-width: 1000px) {
     .grille-plats,
     .grille-plats.trois,
@@ -546,9 +541,7 @@ div.photo span {
 }
 
 
-/* =====================================================
-   RESPONSIVE : tablette et téléphone
-   ===================================================== */
+/*RESPONSIVE */
 img {
     max-width: 100%;
 }
